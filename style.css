@@ -1,0 +1,235 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0f19;
+  color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+header a {
+  background: white;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 20px;
+  background: #111827;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background: #25d366;
+  padding: 13px 22px;
+  border-radius: 9px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  margin: 30px 10px 15px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.game {
+  background: #151b2b;
+  border: 1px solid #26304a;
+  padding: 20px;
+  border-radius: 14px;
+  transition: transform 0.2s;
+}
+
+.game:hover {
+  transform: translateY(-4px);
+}
+
+.game h3 {
+  margin-bottom: 10px;
+}
+
+.game p {
+  color: #9fb0c9;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.game button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  font-weight: bold;
+}
+
+.game button:hover {
+  background: #6a11cb;
+}
+
+.packs,
+.form {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 22px;
+  background: #151b2b;
+  border: 1px solid #26304a;
+  border-radius: 14px;
+}
+
+.packs {
+  display: none;
+}
+
+.packs h3,
+.form h3 {
+  margin-bottom: 16px;
+}
+
+.pack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid #26304a;
+}
+
+.pack button {
+  background: #22c55e;
+  color: white;
+  border: 0;
+  padding: 9px 13px;
+  border-radius: 6px;
+}
+
+.form label {
+  display: block;
+  margin: 13px 0 7px;
+  font-size: 14px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b0f19;
+  color: white;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #2575fc;
+}
+
+.form .submit {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: #25d366;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form .submit:hover {
+  background: #16a34a;
+}
+
+.payment-info {
+  background: #0b0f19;
+  border: 1px solid #334155;
+  padding: 14px;
+  margin-top: 14px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 2;
+}
+
+@media (max-width: 500px) {
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .games {
+    grid-template-columns: 1fr;
+  }
+
+  .packs,
+  .form {
+    margin: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 19px;
+  }
+}
+
